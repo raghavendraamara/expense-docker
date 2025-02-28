@@ -11,11 +11,11 @@ sudo dnf -y install dnf-plugins-core
     
 # Add Docker's official repository
 echo "Adding Docker's repository..."
-sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo -y
 
 # Install Docker Engine
 echo "Installing Docker Engine..."
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 # Start Docker service
 echo "Starting Docker service..."
